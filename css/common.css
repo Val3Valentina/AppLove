@@ -4,13 +4,67 @@
  */
 
 .mb-0 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .mt-0 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .text-uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+/** Grid System  **/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+[class*="col-"] {
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+}
+
+.col-1 {
+    /*(1 / 12) x 100 */
+    width: 8.333333%;
+}
+
+.col-2 {
+    /*(2 / 12) x 100 */
+    width: 16.666667%;
+}
+
+.col-3 {
+    /*(3 / 12) x 100 */
+    width: 25%;
+}
+
+.col-4 {
+    /*(4 / 12) x 100 */
+    width: 33.333333%;
+}
+
+.col-5 {
+    /*(5 / 12) x 100 */
+    width: 41.666667%;
+}
+
+.col-12 {
+    /*(12 / 12) x 100 */
+    width: 100%;
 }
